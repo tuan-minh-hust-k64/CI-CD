@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: server-deployment
-        image: tuanminh009/iot-be:v2
+        image: tuanminh009/iot-be:9
         resources:
           limits:
             memory: "128Mi"
