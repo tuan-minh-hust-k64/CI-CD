@@ -13,10 +13,10 @@ spec:
     spec:
       containers:
       - name: client-deployment
-        image: tuanminh009/iot-fe:v1
+        image: tuanminh009/fe-iot:v2
         resources:
           limits:
             memory: "128Mi"
             cpu: "500m"
         ports:
-        - containerPort: 3000
+        - containerPort: 80

@@ -11,8 +11,8 @@ spec:
   persistentVolumeReclaimPolicy: Recycle
   storageClassName: mylocalstorage
   hostPath:
-  path: /mnt/f
-  type: DirectoryOrCreate
+    path: /mnt/f
+    type: DirectoryOrCreate
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim

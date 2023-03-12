@@ -13,10 +13,13 @@ spec:
     spec:
       containers:
       - name: server-deployment
-        image: tuanminh009/iot-be:v1
+        image: tuanminh009/iot-be:v2
         resources:
           limits:
             memory: "128Mi"
             cpu: "500m"
+        env:
+          - name: DB_URL
+            value: mongodb://mongo-service
         ports:
         - containerPort: 3001
